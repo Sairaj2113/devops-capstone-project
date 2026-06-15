@@ -144,7 +144,6 @@ class TestAccountService(TestCase):
             resp.status_code,
             status.HTTP_404_NOT_FOUND
         )
-    
 
     def test_get_account_list(self):
         """It should Get a list of Accounts"""
@@ -164,7 +163,7 @@ class TestAccountService(TestCase):
         data = response.get_json()
 
         self.assertEqual(len(data), 5)
-    
+
     def test_update_account(self):
         """It should Update an existing Account"""
 
